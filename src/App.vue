@@ -1,11 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
+import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
 
   <NavBar/>
+
+  <HomeView/>
 
 
 </template>
@@ -448,4 +451,13 @@ body {
 	user-select: none;
 }
 /* BODY END */
+
+
+/* WRAPPER START */
+.wrapper {
+  max-width: 855px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* WRAPPER END */
 </style>

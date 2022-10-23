@@ -67,12 +67,6 @@ export default {
   box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.5);
 }
 
-.wrapper {
-  max-width: 855px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .header__wrapper {
   max-width: 1200px;
   margin: 0 auto;
