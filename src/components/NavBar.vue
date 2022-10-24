@@ -4,7 +4,7 @@
       
       <div class="header__logo">
         <a href="/" class="header__logo-link">
-          <img src="../assets/logo_portfolio.svg" alt="Portfolio" class="header__logo-pic">
+          <img src="../assets/svg/logo_portfolio.svg" alt="Portfolio" class="header__logo-pic">
         </a>
       </div>
 
