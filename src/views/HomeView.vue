@@ -15,7 +15,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <IntroSection />
     <RecentSection />
     <FeaturedSection />
-    <FooterBar />
   </main>
+
+  <FooterBar />
   
 </template>

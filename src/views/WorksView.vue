@@ -1,11 +1,13 @@
 <script>
 import NavBar from '../components/NavBar.vue'
 import WorkCards from '../components/WorkCards.vue'
+import FooterBar from '../components/FooterBar.vue'
 
 export default {
   components: {
     NavBar,
-    WorkCards
+    WorkCards,
+    FooterBar
   },
   data() {
     return {
@@ -72,6 +74,8 @@ export default {
       </div>
     </section>
   </main>
+
+  <FooterBar />
 
 </template>
 
