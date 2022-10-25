@@ -1,4 +1,19 @@
+<script>
+import { RouterLink } from 'vue-router';
+
+export default {
+  setup () {
+    
+
+    return {}
+  },
+  methods: {
+  },
+}
+</script>
+
 <template>
+  
   <header class="header">
     <div class="header__wrapper">
       
@@ -16,7 +31,7 @@
           </li>
 
           <li class="header__item">
-            <RouterLink to="/" class="header__link">Works</RouterLink>
+            <RouterLink to="/works" class="header__link">Works</RouterLink>
           </li>
 
           <li class="header__item">
@@ -35,18 +50,8 @@
 
     </div>
   </header>
+
 </template>
-
-<script>
-import { RouterLink } from 'vue-router'
-export default {
-  setup () {
-    
-
-    return {}
-  }
-}
-</script>
 
 <style scoped>
 /* START HEADER */

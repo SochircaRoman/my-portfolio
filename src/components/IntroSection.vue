@@ -5,9 +5,9 @@
         <div class="intro__wrapper">
 
           <div class="intro__content">
-            <h1 class="intro__content-title">Hi, I am Roman, Junior Frontend Dev</h1>
+            <h1 class="intro__content-title">Hi, I am Roman, Junior Web Developer</h1>
             <p class="intro__content-subtitle">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              My name is Roman and I am a junior web developer that create new websites and applications. I work with VueJs framework, I know: HTML, CSS, JS, Node.js, Python, I work in Visual Studio Code, Pycharm.
             </p>
             <button class="intro__content-btn">
               <a href="./download/roman_cv.pdf" target="_blank" class="intro__content-link">Download Resume</a>
