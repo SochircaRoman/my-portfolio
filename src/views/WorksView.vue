@@ -64,7 +64,7 @@ export default {
 
           <div class="work__content-cards">
             <WorkCards
-              cards="cards"
+              :cards="cards"
             />
           </div>
 
