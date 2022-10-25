@@ -3,16 +3,16 @@
   <div class="work__card">
     <a href="./workDetail.html" class="work__card-link">
       <div class="work__card-wrapper">
-        <img src="/img/featured_work/img_01.jpg" alt="" class="work__card-img">
+        <img src="../../../public/featured_work/img_01.jpg" alt="" class="work__card-img">
       </div>
     </a>
     <div class="work__card-content">
-      <h3 class="work__card-title">Designing Dashboards</h3>
+      <h3 class="work__card-title">{{ card.title }}</h3>
       <div class="work__card-information">
-        <span class="work__information-date noselect">2020</span>
-        <span class="work__information-tag noselect">Dashboard</span>
+        <span class="work__information-date noselect">{{ card.year }}</span>
+        <span class="work__information-tag noselect">{{ card.tag }}</span>
       </div>
-      <p class="work__card-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      <p class="work__card-description">{{ card.text }}</p>
     </div>
   </div>
   <div class="work__card-line"></div>
@@ -21,7 +21,12 @@
 
 <script>
   export default {
-    
+    props: {
+      card: {
+        type: Object,
+        required: true,
+      }
+    }
   }
 </script>
 
