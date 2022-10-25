@@ -1,0 +1,84 @@
+<template>
+  
+  <div class="work__card">
+    <a href="./workDetail.html" class="work__card-link">
+      <div class="work__card-wrapper">
+        <img src="/img/featured_work/img_01.jpg" alt="" class="work__card-img">
+      </div>
+    </a>
+    <div class="work__card-content">
+      <h3 class="work__card-title">Designing Dashboards</h3>
+      <div class="work__card-information">
+        <span class="work__information-date noselect">2020</span>
+        <span class="work__information-tag noselect">Dashboard</span>
+      </div>
+      <p class="work__card-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    </div>
+  </div>
+  <div class="work__card-line"></div>
+
+</template>
+
+<script>
+  export default {
+    
+  }
+</script>
+
+<style scoped>
+/* START WORK CARD */
+.work__card {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s all;
+}
+
+.work__card-wrapper {
+  margin-right: 18px;
+  padding: 0 15px;
+}
+
+.work__card-img {
+  border-radius: 6px;
+}
+
+.work__card:hover {
+  transform: scale(1.05);
+}
+
+.work__card-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  margin-top: -10px;
+}
+
+.work__information-date {
+  padding: 1px 10px;
+  background: #142850;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 60px;
+  margin-right: 26px;
+}
+
+.work__information-tag {
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+.work__card-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.work__card-line {
+  border-top: 1px solid #E0E0E0;
+  max-width: 100%;
+  margin: 30px 0px 70px;
+}
+  /* END WORK CARD */
+</style>
