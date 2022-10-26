@@ -35,7 +35,7 @@ export default {
           </li>
 
           <li class="header__item">
-            <RouterLink to="/" class="header__link">Blog</RouterLink>
+            <RouterLink to="/blog" class="header__link">Blog</RouterLink>
           </li>
 
         </ul>
