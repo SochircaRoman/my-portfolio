@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import NavBar from '../components/NavBar.vue'
 import IntroSection from '../components/IntroSection.vue'
 import RecentSection from '../components/RecentSection.vue'

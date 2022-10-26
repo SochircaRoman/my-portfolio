@@ -63,12 +63,10 @@ export default {
           <div class="work__content-title">
             <h2 class="title">Works</h2>
           </div>
-
-          <div class="work__content-cards">
+          
             <WorkCards
               :cards="cards"
             />
-          </div>
 
         </div>
       </div>
@@ -79,7 +77,7 @@ export default {
 
 </template>
 
-<style>
+<style scoped>
 .work {
   padding-top: 160px;
 }
