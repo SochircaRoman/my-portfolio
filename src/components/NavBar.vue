@@ -2,12 +2,15 @@
 import { RouterLink } from 'vue-router';
 
 export default {
-  setup () {
-    
-
-    return {}
+  data() {
+    return {
+      active: 1,
+    }
   },
   methods: {
+    activate(el) {
+      this.active = el;
+    }
   },
 }
 </script>
@@ -26,16 +29,16 @@ export default {
       <nav class="header__nav">
         <ul class="header__list">
         
-          <li class="header__item">
-            <RouterLink to="/" class="header__link active__link">Home</RouterLink>
+          <li @click="activate(1)" class="header__item">
+            <RouterLink to="/" class="header__link" :class="{ 'active__link' : active == 1 }">Home</RouterLink>
           </li>
 
-          <li class="header__item">
-            <RouterLink to="/works" class="header__link">Works</RouterLink>
+          <li @click="activate(2)" class="header__item">
+            <RouterLink to="/works" class="header__link" :class="{ 'active__link' : active == 2 }">Works</RouterLink>
           </li>
 
-          <li class="header__item">
-            <RouterLink to="/blog" class="header__link">Blog</RouterLink>
+          <li @click="activate(3)" class="header__item">
+            <RouterLink to="/blog" class="header__link" :class="{ 'active__link' : active == 3 }">Blog</RouterLink>
           </li>
 
         </ul>

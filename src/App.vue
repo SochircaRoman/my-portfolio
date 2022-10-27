@@ -1,10 +1,26 @@
-<script setup>
+<script>
 import { RouterView } from 'vue-router';
+import NavBar from './components/NavBar.vue';
+import FooterBar from './components/FooterBar.vue';
+
+export default {
+    components: {
+        RouterView,
+        NavBar,
+        FooterBar
+    }
+}
 </script>
 
 <template>
 
-  <RouterView />
+    <NavBar/>
+
+    <div>
+        <RouterView />
+    </div>
+
+    <FooterBar />
 
 </template>
 
