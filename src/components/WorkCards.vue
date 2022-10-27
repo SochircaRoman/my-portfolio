@@ -3,8 +3,8 @@
   <div class="work__content-cards">
     <WorkCard
       v-for="card in cards"
-      :card="card"
       :key="card.id"
+      :card="card"
     />
   </div>
 
@@ -14,13 +14,21 @@
 import WorkCard from './UI/WorkCard.vue';
 
 export default {
+  components: {
+    WorkCard,
+  },
   props: {
       cards: {
           type: Array,
           required: true,
       }
   },
-  components: { WorkCard }
+  data() {
+    return {
+      
+    }
+  }
+  
 }
 </script>
 
