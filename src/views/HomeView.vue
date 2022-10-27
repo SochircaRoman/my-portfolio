@@ -14,8 +14,6 @@ export default {
 
 <template>
 
-  
-
   <main>
     <IntroSection />
     <RecentSection />

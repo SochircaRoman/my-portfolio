@@ -10,9 +10,25 @@ export default {
       active: 1,
     }
   },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
   methods: {
     activate(el) {
       this.active = el;
+    },
+    handleScroll() {
+      window.onscroll = () => {
+        const header = document.querySelector(".header");
+        if (window.pageYOffset > 50) {
+          header.classList.add("header_active");
+        } else {
+          header.classList.remove("header_active");
+        }
+      }
     }
   },
 }

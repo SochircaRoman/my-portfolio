@@ -49,8 +49,6 @@ export default {
 
 <template>
 
-  
-
   <main>
     <section class="work">
       <div class="wrapper">
