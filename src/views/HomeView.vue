@@ -1,8 +1,15 @@
-<script setup>
+<script>
 import IntroSection from '../components/IntroSection.vue'
 import RecentSection from '../components/RecentSection.vue'
 import FeaturedSection from '../components/FeaturedSection.vue'
-import { RouterLink, RouterView } from 'vue-router'
+
+export default {
+  components: {
+    IntroSection,
+    RecentSection,
+    FeaturedSection,
+  }
+}
 </script>
 
 <template>
