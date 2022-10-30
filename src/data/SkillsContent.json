@@ -1,0 +1,69 @@
+[
+  {
+    "type": "frontend",
+    "technologies": [
+      {
+        "title": "html",
+        "image": "html.png"
+      },
+      {
+        "title": "css",
+        "image": "css.png"
+      },
+      {
+        "title": "js",
+        "image": "js.png"
+      },
+      {
+        "title": "vuejs",
+        "image": "vuejs.png"
+      }
+    ]
+  },
+  {
+    "type": "backend",
+    "technologies": [
+      {
+        "title": "nodejs",
+        "image": "nodejs.png"
+      },
+      {
+        "title": "expressjs",
+        "image": "expressjs.png"
+      },
+      {
+        "title": "python",
+        "image": "python.png"
+      },
+      {
+        "title": "mysql",
+        "image": "mysql.png"
+      }
+    ]
+  },
+  {
+    "type": "tools",
+    "technologies": [
+      {
+        "title": "figma",
+        "image": "figma.png"
+      },
+      {
+        "title": "vscode",
+        "image": "vscode.png"
+      },
+      {
+        "title": "pycharm",
+        "image": "pycharm.png"
+      },
+      {
+        "title": "github",
+        "image": "github.png"
+      },
+      {
+        "title": "firebase",
+        "image": "firebase.png"
+      }
+    ]
+  }
+]
