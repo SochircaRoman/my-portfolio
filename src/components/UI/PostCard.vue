@@ -1,3 +1,16 @@
+<script>
+
+export default {
+  props: {
+    post: {
+      type: Object,
+      required: true,
+    }
+  }
+}
+
+</script>
+
 <template>
   
   <div class="post">
@@ -12,18 +25,6 @@
   <div class="blog__post-line"></div>
 
 </template>
-
-<script>
-export default {
-  props: {
-    post: {
-      type: Object,
-      required: true,
-    }
-  }
-}
-
-</script>
 
 <style scoped>
 /* START POST */

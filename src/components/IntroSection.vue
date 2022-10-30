@@ -21,51 +21,7 @@
         </div>
 
 
-        <div class="intro__content-tech">
-          <h2 class="intro__tech-title">My Tech Stack</h2>
-          <div class="intro__tech-content">
-            <div class="tech__content-menu">
-
-              <div class="tech__menu-content noselect">
-                <span class="tech__menu-line"></span>
-                <span class="tech__menu-name">frontend</span>
-              </div>
-              <div class="tech__menu-content noselect">
-                <span class="tech__menu-line"></span>
-                <span class="tech__menu-name">backend</span>
-              </div>
-
-              <div class="tech__menu-content noselect">
-                <span class="tech__menu-line"></span>
-                <span class="tech__menu-name">tools</span>
-              </div>
-
-            </div>
-            <div class="tech__content-skills">
-
-              <span class="skill__wrapper noselect">
-                <span><img class="skill__img" src="../../skills/css.png" alt=""></span>
-              </span>
-
-              <span class="skill__wrapper noselect">
-                <span><img class="skill__img" src="../../skills/node.png" alt=""></span>
-              </span>
-
-              <span class="skill__wrapper noselect">
-                <span><img class="skill__img" src="../../skills/vuejs.png" alt=""></span>
-              </span>
-
-              <span class="skill__wrapper noselect">
-                <span><img class="skill__img" src="../../skills/html5.png" alt=""></span>
-              </span>
-
-              <span class="skill__wrapper noselect">
-                <span><img class="skill__img" src="../../skills/js.png" alt=""></span>
-              </span>
-
-            </div>
-          </div>
-        </div>
+        
 
 
       </div>
@@ -137,66 +93,6 @@ export default {
 
 .intro__image-photo {
   border-radius: 50%;
-}
-
-
-
-.intro__content-tech{
-  margin-bottom: 40px;
-}
-
-.intro__tech-title {
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 60px;
-  color: #21243D;
-  margin-bottom: 20px;
-}
-
-.tech__content-menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.tech__menu-content:hover {
-  cursor: pointer;
-  transition: 0.2s all;
-  background:#b7b3b3;
-  border-left: 5px solid #21243D;
-}
-
-.tech__menu-line {
-  border-left: 1px solid #000000;
-  position: absolute;
-  height: 60px;
-}
-
-.tech__menu-name {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 60px;
-  color: #21243D;
-  margin-left: 10px;
-}
-
-.tech__content-skills {
-  text-align: center;
-}
-
-.skill__img {
-  width: 60px;
-  height: 60px;
-  transition: 0.2s all;
-}
-.skill__img:hover {
-  transform: scale(1.1);
-}
-
-.skill__wrapper {
-  padding: 30px 10px;
-  margin-right: 10px;
 }
 /* END INTRO */
 </style>
