@@ -1,3 +1,14 @@
+<script>
+export default {
+  props: {
+    card: {
+      type: Object,
+      required: true,
+    }
+  }
+}
+</script>
+
 <template>
   
   <div class="work__card">
@@ -18,17 +29,6 @@
   <div class="work__card-line"></div>
 
 </template>
-
-<script>
-export default {
-  props: {
-    card: {
-      type: Object,
-      required: true,
-    }
-  }
-}
-</script>
 
 <style scoped>
 /* START WORK CARD */

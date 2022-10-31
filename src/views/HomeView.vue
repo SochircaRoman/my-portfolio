@@ -4,6 +4,7 @@ import RecentSection from '../components/RecentSection.vue';
 import FeaturedSection from '../components/FeaturedSection.vue';
 import WorkContent from '../data/WorkContent.json';
 import SkillsContent from '../data/SkillsContent.json';
+import BlogContent from '../data/BlogContent.json';
 
 export default {
   components: {
@@ -56,6 +57,7 @@ export default {
   data() {
     return {
       cards: WorkContent,
+      posts: BlogContent,
       skills: SkillsContent,
     }
   },
@@ -70,7 +72,9 @@ export default {
       :skills="skills"
     />
 
-    <RecentSection />
+    <RecentSection
+      :posts="posts"
+    />
 
     <FeaturedSection
       :cards="cards"

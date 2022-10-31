@@ -1,3 +1,14 @@
+<script>
+export default {
+  props: {
+    posts: {
+      type: Array,
+      required: true,
+    }
+  }
+}
+</script>
+
 <template>
 
   <section class="recent">
@@ -7,34 +18,22 @@
           <h2 class="recent__header-title noselect">Recent posts</h2>
           <div class="recent__header-view">
             <RouterLink to="/blog" class="recent__header-link">View all</RouterLink>
-            
           </div>
         </div>
 
         <div class="recent__cards">
 
-          <div class="recent__card">
-            <h3 class="recent__card-title">Making a design system from scratch</h3>
+          <div class="recent__card"
+            v-for="(post, index) in posts.slice(0, 2)"
+            :key="index"
+          >
+            <h3 class="recent__card-title">{{ post.title }}</h3>
             <div class="recent__card-information">
-              <div class="card__information-date">12 Feb 2020</div>
+              <div class="card__information-date">{{ post.date }}</div>
               <div class="card__information-line"></div>
-              <div class="card__information-tags">Design, Pattern</div>
+              <div class="card__information-tags">{{ post.tag }}</div>
             </div>
-            <p class="recent__card-description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-
-          <div class="recent__card">
-            <h3 class="recent__card-title">Creating pixel perfect icons in Figma</h3>
-            <div class="recent__card-information">
-              <div class="card__information-date">12 Feb 2020</div>
-              <div class="card__information-line"></div>
-              <div class="card__information-tags">Figma, Icon Design</div>
-            </div>
-            <p class="recent__card-description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
+            <p class="recent__card-description">{{ post.text }}</p>
           </div>
 
         </div>
@@ -42,12 +41,6 @@
     </section>
     
 </template>
-
-<script>
-  export default {
-    
-  }
-</script>
 
 <style scoped>
 /* START RECENT */
