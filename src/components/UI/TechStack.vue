@@ -48,7 +48,7 @@ export default {
           <span class="tech__menu-name" @click="selectCurrentSkillType(skill.id)">{{ skill.type }}</span>
         </div>
       </div>
-      
+
       <div class="tech__content-skills" v-if="currentSkillType == 0">
         <span
           class="skill__wrapper noselect"
@@ -130,6 +130,7 @@ export default {
 
 .tech__content-skills {
   text-align: center;
+  transition: 0.2s all;
 }
 
 .skill__img {

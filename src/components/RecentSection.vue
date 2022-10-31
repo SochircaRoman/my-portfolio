@@ -6,7 +6,8 @@
         <div class="recent__header">
           <h2 class="recent__header-title noselect">Recent posts</h2>
           <div class="recent__header-view">
-            <a href="#!" class="recent__header-link">View all</a>
+            <RouterLink to="/blog" class="recent__header-link">View all</RouterLink>
+            
           </div>
         </div>
 

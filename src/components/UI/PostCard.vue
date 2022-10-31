@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  
+
   <div class="post">
     <h3 class="post__title">{{ post.title }}</h3>
     <div class="post__info">
@@ -80,5 +80,6 @@ export default {
   max-width: 681px;
   margin-bottom: 32px;
 }
+
 /* END POST */
 </style>
