@@ -1,3 +1,23 @@
+<script>
+import TechStack from './UI/TechStack.vue';
+
+export default {
+  components: {
+    TechStack,
+  },
+  props: {
+      skills: {
+          type: Array,
+          required: true,
+      }
+  },
+  data() {
+    return {
+    }
+  }
+}
+</script>
+
 <template>
 
   <section class="intro">
@@ -19,25 +39,15 @@
             <img class="intro__image-photo" src="../assets/image_intro.jpg" alt="My image">
           </div>
         </div>
-
-
         
-
+        <TechStack
+          :skills="skills"
+        />
 
       </div>
     </section>
 
 </template>
-
-<script>
-export default {
-  setup () {
-    
-
-    return {}
-  }
-}
-</script>
 
 <style scoped>
 /* START INTRO */

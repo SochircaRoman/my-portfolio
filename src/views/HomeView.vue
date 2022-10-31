@@ -3,6 +3,7 @@ import IntroSection from '../components/IntroSection.vue';
 import RecentSection from '../components/RecentSection.vue';
 import FeaturedSection from '../components/FeaturedSection.vue';
 import WorkContent from '../data/WorkContent.json';
+import SkillsContent from '../data/SkillsContent.json';
 
 export default {
   components: {
@@ -36,11 +37,26 @@ export default {
         type: String,
 			  required: true
       },
+    },
+    skills: {
+      id: {
+        type: Number,
+			  required: true
+      },
+      type: {
+        type: String,
+			  required: true
+      },
+      technologies: {
+        type: Array,
+			  required: true
+      },
     }
   },
   data() {
     return {
       cards: WorkContent,
+      skills: SkillsContent,
     }
   },
 }
@@ -50,7 +66,9 @@ export default {
 
   <main>
     
-    <IntroSection />
+    <IntroSection
+      :skills="skills"
+    />
 
     <RecentSection />
 

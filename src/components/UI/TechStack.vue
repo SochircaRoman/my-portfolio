@@ -1,13 +1,33 @@
 <script>
-  export default {
+export default {
     props: {
       skills: {
           type: Array,
           required: true,
       }
   },
-    
+  data() {
+    return {
+      currentSkillType: null,
+    }
+  },
+  methods: {
+    selectCurrentSkillType(index) {
+      switch (index) {
+        case 0:
+          this.currentSkillType = 0
+          break;
+        case 1:
+          this.currentSkillType = 1
+          break;
+        case 2:
+          this.currentSkillType = 2
+          break;
+      }
+    },
   }
+    
+}
 </script>
 
 <template>
@@ -25,21 +45,42 @@
           :key="skill.id"
         >
           <span class="tech__menu-line"></span>
-          <span class="tech__menu-name">{{ skill.type }}</span>
+          <span class="tech__menu-name" @click="selectCurrentSkillType(skill.id)">{{ skill.type }}</span>
         </div>
       </div>
       
-      <div class="tech__content-skills">
-
+      <div class="tech__content-skills" v-if="currentSkillType == 0">
         <span
           class="skill__wrapper noselect"
-          v-for="(value, index) in skills.technologies"
+          v-for="(tech, index) in skills[0].technologies"
           :key="index"
         >
-          <span><img class="skill__img" :src="'../../skills/' + value.image" :alt="value.title"></span>
+          <span><img class="skill__img" :src="'../../skills/' + tech.image" :alt="tech.title"></span>
         </span>
-
       </div>
+
+      <div class="tech__content-skills" v-else-if="currentSkillType == 1">
+        <span
+          class="skill__wrapper noselect"
+          v-for="(tech, index) in skills[1].technologies"
+          :key="index"
+        >
+          <span><img class="skill__img" :src="'../../skills/' + tech.image" :alt="tech.title"></span>
+        </span>
+      </div>
+
+      <div class="tech__content-skills" v-else-if="currentSkillType == 2">
+        <span
+          class="skill__wrapper noselect"
+          v-for="(tech, index) in skills[2].technologies"
+          :key="index"
+        >
+          <span><img class="skill__img" :src="'../../skills/' + tech.image" :alt="tech.title"></span>
+        </span>
+      </div>
+
+      <div class="tech__content-skills" v-else></div>
+
     </div>
   </div>
 
