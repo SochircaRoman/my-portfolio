@@ -1,9 +1,19 @@
 <script>
+import BlogContent from '../../data/BlogContent.json';
+
 export default {
-  props: {
-    post: {
-      type: Object,
-      required: true,
+  props: ["id"],  
+  data() {
+    return {
+      posts: BlogContent,
+    }
+  },
+  watch: {
+    id: {
+      handler(post) {
+        this.posts = BlogContent[post]
+      },
+      immediate: true,
     }
   }
 }
@@ -11,7 +21,7 @@ export default {
 
 <template>
 
-  <div class="postDetail__content">
+  <div class="postDetail__content" v-for="post in posts" :key="post">
 
     <div class="postDetail__content-title">
       <h2 class="title">{{ post.title }}</h2>

@@ -6,9 +6,7 @@ export default {
     RouterLink,
   },
   data() {
-    return {
-      active: 1,
-    }
+    return {}
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
@@ -17,9 +15,6 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    activate(el) {
-      this.active = el;
-    },
     handleScroll() {
       window.onscroll = () => {
         const header = document.querySelector(".header");
@@ -48,16 +43,16 @@ export default {
       <nav class="header__nav">
         <ul class="header__list">
         
-          <li @click="activate(1)" class="header__item">
-            <RouterLink to="/" class="header__link" :class="{ 'active__link' : active == 1 }">Home</RouterLink>
+          <li class="header__item">
+            <RouterLink to="/" class="header__link">Home</RouterLink>
           </li>
 
-          <li @click="activate(2)" class="header__item">
-            <RouterLink to="/works" class="header__link" :class="{ 'active__link' : active == 2 }">Works</RouterLink>
+          <li class="header__item">
+            <RouterLink to="/works" class="header__link">Works</RouterLink>
           </li>
 
-          <li @click="activate(3)" class="header__item">
-            <RouterLink to="/blog" class="header__link" :class="{ 'active__link' : active == 3 }">Blog</RouterLink>
+          <li class="header__item">
+            <RouterLink to="/blog" class="header__link">Blog</RouterLink>
           </li>
 
         </ul>
@@ -130,7 +125,7 @@ export default {
   color: burlywood;
 }
 
-.active__link {
+.router-link-active {
   color: burlywood;
 }
 

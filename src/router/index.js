@@ -23,9 +23,10 @@ const router = createRouter({
       component: BlogView
     },
     {
-      path: '/post_detail/:id',
-      name: 'post_detail',
-      component: PostDetail
+      path: '/post/:id',
+      name: 'post',
+      component: PostDetail,
+      props: true
     }
   ]
 })
