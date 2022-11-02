@@ -5,13 +5,13 @@ export default {
   props: ["id"],  
   data() {
     return {
-      posts: BlogContent,
+      post: {}
     }
   },
   watch: {
     id: {
-      handler(post) {
-        this.posts = BlogContent[post]
+      handler() {
+        this.post = BlogContent[this.id]
       },
       immediate: true,
     }
@@ -21,30 +21,33 @@ export default {
 
 <template>
 
-  <div class="postDetail__content" v-for="post in posts" :key="post">
+  <div class="postDetail__content">
 
-    <div class="postDetail__content-title">
-      <h2 class="title">{{ post.title }}</h2>
-    </div>
+    <div class="wrapper">
 
-    <div class="postDetail__content-posts">
-
-      <div class="postDetail__post">
-        <div class="postDetail__post-information">
-          <span class="postDetail__information-date noselect">{{ post.date }}</span>
-          <span class="postDetail__information-tag noselect">{{ post.tag }}</span>
-        </div>
-        <div class="postDetail__post-text">
-          <div class="postDetail__post-heading">Heading Example 1</div>  
-          <p class="postDetail__post-description">{{ post.text }}</p>
-        </div>
-
-        <div class="postDetail__post-text">
-          <div class="postDetail__post-heading">Heading Example 2</div>  
-          <p class="postDetail__post-description">{{ post.text }}</p>
-        </div>
+      <div class="postDetail__content-title">
+        <h2 class="title">{{ post.title }}</h2>
       </div>
 
+      <div class="postDetail__content-posts">
+
+        <div class="postDetail__post">
+          <div class="postDetail__post-information">
+            <span class="postDetail__information-date noselect">{{ post.date }}</span>
+            <span class="postDetail__information-tag noselect">{{ post.tag }}</span>
+          </div>
+          <div class="postDetail__post-text">
+            <div class="postDetail__post-heading">Heading Example 1</div>  
+            <p class="postDetail__post-description">{{ post.text }}</p>
+          </div>
+
+          <div class="postDetail__post-text">
+            <div class="postDetail__post-heading">Heading Example 2</div>  
+            <p class="postDetail__post-description">{{ post.text }}</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
   
@@ -52,6 +55,10 @@ export default {
 
 <style scoped>
 /* START POSTDETAIL */
+.postDetail__content {
+  padding-top: 160px;
+}
+
 .postDetail__content-title .title {
   font-weight: 700;
   font-size: 34px;
