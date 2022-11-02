@@ -79,6 +79,11 @@ export default {
   background: #FFFFFF;
   border-radius: 4px;
   margin-bottom: 32px;
+  transition: 0.2s all;
+}
+
+.recent__card:hover {
+  transform: scale(1.05);
 }
 
 .recent__card-link {
