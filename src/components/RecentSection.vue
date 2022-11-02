@@ -27,13 +27,15 @@ export default {
             v-for="(post, index) in posts.slice(0, 2)"
             :key="index"
           >
-            <h3 class="recent__card-title">{{ post.title }}</h3>
-            <div class="recent__card-information">
-              <div class="card__information-date">{{ post.date }}</div>
-              <div class="card__information-line"></div>
-              <div class="card__information-tags">{{ post.tag }}</div>
-            </div>
-            <p class="recent__card-description">{{ post.text }}</p>
+            <RouterLink :to='"/post/" + post.id' class="recent__card-link">
+              <h3 class="recent__card-title">{{ post.title }}</h3>
+              <div class="recent__card-information">
+                <div class="card__information-date">{{ post.date }}</div>
+                <div class="card__information-line"></div>
+                <div class="card__information-tags">{{ post.tag }}</div>
+              </div>
+              <p class="recent__card-description">{{ post.text }}</p>
+            </RouterLink>
           </div>
 
         </div>
@@ -77,6 +79,11 @@ export default {
   background: #FFFFFF;
   border-radius: 4px;
   margin-bottom: 32px;
+}
+
+.recent__card-link {
+  text-decoration: none;
+  color: unset;
 }
 
 .recent__card-title {
