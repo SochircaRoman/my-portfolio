@@ -32,12 +32,12 @@ export default {
             <h1 class="intro__content-title">{{ data.title }}</h1>
             <p class="intro__content-subtitle">{{ data.text }}</p>
             <button class="intro__content-btn">
-              <a href="./download/roman_cv.pdf" target="_blank" class="intro__content-link">Download Resume</a>
+              <a href="../../resume/Resume_Roman_Sochirca.pdf" target="_blank" class="intro__content-link">Download Resume</a>
             </button>
           </div>
 
           <div class="intro__image">
-            <img class="intro__image-photo" src="../assets/image_intro.jpg" alt="My image">
+            <img class="intro__image-photo" src="../assets/image_intro.jpg" alt="my image">
           </div>
         </div>
         
