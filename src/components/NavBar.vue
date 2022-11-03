@@ -11,6 +11,7 @@ export default {
     }
   },
   created () {
+    window.addEventListener('load', this.handleLoad)
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed () {
@@ -26,6 +27,13 @@ export default {
           header.classList.remove("header_active");
         }
       }
+    },
+    handleLoad() {
+      window.scrollTo({
+        top: 0,
+        left: 0, 
+        behavior: 'smooth'
+      });
     }
   },
 }
@@ -45,7 +53,10 @@ export default {
       <nav class="header__nav">
         <ul class="header__list">
         
-          <li class="header__item" v-for="item in headerItems" :key="item">
+          <li class="header__item"
+            v-for="item in headerItems"
+            :key="item"
+          >
             <RouterLink :to="`/${item.toLowerCase()}`" class="header__link">{{ item }}</RouterLink>
           </li>
 
