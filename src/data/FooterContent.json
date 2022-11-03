@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "name": "facebook"
+  },
+  {
+    "id": 1,
+    "name": "instagram"
+  },
+  {
+    "id": 2,
+    "name": "twiter"
+  },
+  {
+    "id": 3,
+    "name": "linkedin"
+  }
+]

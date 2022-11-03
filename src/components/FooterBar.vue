@@ -1,40 +1,33 @@
+<script>
+import FooterContent from '../data/FooterContent.json';
+
+export default {
+  data() {
+    return {
+      links: FooterContent
+    }
+  },
+}
+</script>
+
 <template>
 
   <footer class="footer">
     <div class="footer__wrapper">
 
       <div class="footer__content-logo">
-        <div class="footer__item">
+        <div
+          class="footer__item"
+          v-for="link in links"
+          :key="link.id"
+        >
           <a href="#!" class="footer__item-link">
             <div class="footer_logo">
-              <img src="../assets/svg/facebook.svg" alt="" class="footer__logo-pic">
+              <img :src="`/svg/${link.name}.svg`" :alt="link.name" class="footer__logo-pic">
             </div>
           </a>
         </div>
 
-        <div class="footer__item">
-          <a href="#!" class="footer__item-link">
-            <div class="footer_logo">
-              <img src="../assets/svg/instagram.svg" alt="" class="footer__logo-pic">
-            </div>
-          </a>
-        </div>
-
-        <div class="footer__item">
-          <a href="#!" class="footer__item-link">
-            <div class="footer_logo">
-              <img src="../assets/svg/twiter.svg" alt="" class="footer__logo-pic">
-            </div>
-          </a>
-        </div>
-
-        <div class="footer__item">
-          <a href="#!" class="footer__item-link">
-            <div class="footer_logo">
-              <img src="../assets/svg/linkedin.svg" alt="" class="footer__logo-pic">
-            </div>
-          </a>
-        </div>
       </div>
 
       <div class="footer__content-copyright noselect">Copyright ©2022 All rights reserved</div>
@@ -43,12 +36,6 @@
   </footer>
 
 </template>
-
-<script>
-  export default {
-    
-  }
-</script>
 
 <style scoped>
 /* START FOOTER */
