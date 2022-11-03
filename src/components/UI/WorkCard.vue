@@ -22,6 +22,10 @@ export default {
       <div class="work__card-information">
         <span class="work__information-date noselect">{{ card.year }}</span>
         <span class="work__information-tag noselect">{{ card.tag }}</span>
+        <span class="work__information-links noselect">
+          <a href="/" class="work__link"><img src="../../../links/GitHub.png" alt="Github link"></a>
+          <a href="/" class="work__link"><img src="../../../links/external-link.png" alt="Project link"></a>
+        </span>
       </div>
       <p class="work__card-description">{{ card.text }}</p>
     </div>
@@ -73,6 +77,14 @@ export default {
   font-size: 20px;
   line-height: 29px;
   color: #8695A4;
+}
+
+.work__information-links {
+  margin-left: 120px;
+}
+
+.work__link {
+  margin-right: 26px;
 }
 
 .work__card-description {

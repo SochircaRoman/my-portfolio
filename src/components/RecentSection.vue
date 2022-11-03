@@ -83,7 +83,7 @@ export default {
 }
 
 .recent__card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .recent__card-link {
