@@ -13,6 +13,10 @@ export default {
   },
   data() {
     return {
+      data: {
+        title: "Hi, I am Roman, Junior Web Developer",
+        text: "Hello! My name is Roman and I am a junior web developer that create new websites and web applications. I work with VueJs framework, I know: HTML, CSS, JS, Node.js, Python, I work in Visual Studio Code, Pycharm.",
+      }
     }
   }
 }
@@ -25,11 +29,8 @@ export default {
         <div class="intro__wrapper">
 
           <div class="intro__content">
-            <h1 class="intro__content-title">Hi, I am Roman, Junior Web Developer</h1>
-            <p class="intro__content-subtitle">
-              Hello! My name is Roman and I am a junior web developer that create new websites and web applications. I work with VueJs framework, I know: HTML, CSS, JS, Node.js, Python, I work in Visual Studio Code, Pycharm.
-            </p>
-
+            <h1 class="intro__content-title">{{ data.title }}</h1>
+            <p class="intro__content-subtitle">{{ data.text }}</p>
             <button class="intro__content-btn">
               <a href="./download/roman_cv.pdf" target="_blank" class="intro__content-link">Download Resume</a>
             </button>
