@@ -6,7 +6,9 @@ export default {
     RouterLink,
   },
   data() {
-    return {}
+    return {
+      headerItems: ["Home", "Works", "Blog"],
+    }
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
@@ -35,24 +37,16 @@ export default {
     <div class="header__wrapper">
       
       <div class="header__logo">
-        <a href="/" class="header__logo-link">
-          <img src="/svg/logo_portfolio.svg" alt="Portfolio" class="header__logo-pic">
+        <a href="/home" class="header__logo-link">
+          <img src="/svg/logo_portfolio.svg" alt="portfolio" class="header__logo-pic">
         </a>
       </div>
 
       <nav class="header__nav">
         <ul class="header__list">
         
-          <li class="header__item">
-            <RouterLink to="/" class="header__link">Home</RouterLink>
-          </li>
-
-          <li class="header__item">
-            <RouterLink to="/works" class="header__link">Works</RouterLink>
-          </li>
-
-          <li class="header__item">
-            <RouterLink to="/blog" class="header__link">Blog</RouterLink>
+          <li class="header__item" v-for="item in headerItems" :key="item">
+            <RouterLink :to="`/${item.toLowerCase()}`" class="header__link">{{ item }}</RouterLink>
           </li>
 
         </ul>
