@@ -21,8 +21,8 @@ export default {
         <span class="work__information-date noselect">{{ card.year }}</span>
         <span class="work__information-tag noselect">{{ card.tag }}</span>
         <span class="work__information-links noselect">
-          <a href="/" class="work__link"><img src="../../../links/GitHub.png" alt="Github link"></a>
-          <a href="/" class="work__link"><img src="../../../links/external-link.png" alt="Project link"></a>
+          <a href="/" class="work__link"><img src="../../../links/GitHub.png" alt="github"></a>
+          <a href="/" class="work__link"><img src="../../../links/external-link.png" alt="project"></a>
         </span>
       </div>
       <p class="work__card-description">{{ card.text }}</p>

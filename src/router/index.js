@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import WorksView from '../views/WorksView.vue'
 import BlogView from '../views/BlogView.vue'
+import ErrorPage from '../views/ErrorPage.vue'
 import PostDetail from '../components/UI/PostDetail.vue'
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
       name: 'post',
       component: PostDetail,
       props: true
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'errorpage',
+      component: ErrorPage
     }
   ]
 })
