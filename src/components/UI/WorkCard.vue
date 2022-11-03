@@ -12,11 +12,9 @@ export default {
 <template>
   
   <div class="work__card">
-    <a href="./workDetail.html" class="work__card-link">
-      <div class="work__card-wrapper">
-        <img :src="'../../../featured_work/' + card.imgName + '.jpg'"  :alt="card.imgName" class="work__card-img">
-      </div>
-    </a>
+    <div class="work__card-wrapper">
+      <img :src="'../../../featured_work/' + card.imgName + '.jpg'"  :alt="card.imgName" class="work__card-img">
+    </div>
     <div class="work__card-content">
       <h3 class="work__card-title">{{ card.title }}</h3>
       <div class="work__card-information">
