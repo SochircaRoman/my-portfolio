@@ -34,6 +34,19 @@ export default {
         left: 0, 
         behavior: 'smooth'
       });
+    },
+    handleBurger() {
+      const burgerItem = document.querySelector(".burger");
+      const menu = document.querySelector(".header__nav");
+      const menuCloseItem = document.querySelector(".header__nav-close");
+
+      burgerItem.addEventListener("click", () => {
+        menu.classList.add("header__nav_active");
+      })
+
+      menuCloseItem.addEventListener("click", () => {
+        menu.classList.remove("header__nav_active");
+      })
     }
   },
 }
@@ -68,6 +81,12 @@ export default {
         </div>
 
       </nav>
+
+      <div @click="handleBurger()" class="header__burger burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+      </div>
 
     </div>
   </header>
@@ -163,4 +182,72 @@ export default {
 }
 /* END HEADER */
 
+
+/* HEADER BURGER */
+@media screen and (max-width: 767px) {
+  .header__burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 10;
+    padding: 50px;
+    transform: translateX(100%);
+    transition: .3s all linear;
+  }
+
+  .header__nav_active {
+    transform: translateX(0);
+  }
+
+  .header__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }  
+
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header__link {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    cursor: pointer;
+  }
+
+  .header__nav-close-line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .header__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+/* HEADER BURGER */
 </style>
