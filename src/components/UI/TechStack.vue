@@ -147,4 +147,23 @@ export default {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  .tech {
+    text-align: center;
+  }
+
+  .tech__content-menu {
+    align-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .tech__menu-line {
+    display: flex;
+  }
+
+  .tech__menu-name {
+    display: flex;
+  }
+}
+
 </style>

@@ -42,6 +42,7 @@ export default {
         </div>
         
         <TechStack
+          class="intro__tech-stack"
           :skills="skills"
         />
 
@@ -140,6 +141,10 @@ export default {
 
   .intro {
     padding-top: 100px;
+  }
+
+  .intro__tech-stack {
+    margin-top: 80px;
   }
 }
 /* MEDIA END */
