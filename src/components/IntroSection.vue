@@ -106,4 +106,41 @@ export default {
   border-radius: 50%;
 }
 /* END INTRO */
+
+/* MEDIA START */
+@media screen and (max-width: 800px) {
+  .intro__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .intro__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .intro__content-title {
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  .intro__content-subtitle {
+    text-align: center;
+    margin-bottom: 27px
+  }
+
+  .intro__content-btn {
+    margin-bottom: 58px;
+  }
+
+  .intro__image {
+    margin-bottom: 44px;
+  }
+
+  .intro {
+    padding-top: 100px;
+  }
+}
+/* MEDIA END */
 </style>
