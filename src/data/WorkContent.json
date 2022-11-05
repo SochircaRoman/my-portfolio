@@ -2,33 +2,41 @@
   {
     "id": 0,
     "imgName": "img_01",
-    "title": "Designing Dashboards",
-    "year": "2020",
-    "tag": "Dashboard",
-    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    "title": "Caesar Cipher",
+    "year": "2021",
+    "tag": "JavaScript, Bootstrap",
+    "text": "I wrote this mini project in one day for the cryptography course at the university. I used native JS and the CSS framework Bootstrap for styles. For me, it was a positive experience because today cryptography is used everywhere.",
+    "projectLink": "https://caesar-cipher-4b919.web.app",
+    "githubLink": "https://github.com/SochircaRoman/caesar-cipher-js"
   },
   {
     "id": 1,
     "imgName": "img_02",
-    "title": "Vibrant Portraits of 2020",
-    "year": "2018",
-    "tag": "Illustration",
-    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    "title": "Virtual Keyboard",
+    "year": "2020",
+    "tag": "JavaScript, CSS",
+    "text": "This mini project is a virtual keyboard written on native JS and with the CSS styles. The project was one of my first attempts to use my knowledge of HTML, CSS and JS in creating something useful for other users.",
+    "projectLink": "https://js-keyboard-80f0b.web.app",
+    "githubLink": "https://github.com/SochircaRoman/keyboard-js"
   },
   {
     "id": 2,
     "imgName": "img_03",
-    "title": "36 Days of Malayalam type",
-    "year": "2018",
-    "tag": "Typography",
-    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    "title": "Game Clicker",
+    "year": "2020",
+    "tag": "JavaScript, CSS",
+    "text": "This is a simple and fun clicker game written in native JS and using CSS. I wrote it be following a tutorial from YouTube. It was fun to coding this mini game, I learned that JS can be fun",
+    "projectLink": "https://clicker-game-js.web.app",
+    "githubLink": "https://github.com/SochircaRoman/clicker-game-js"
   },
   {
     "id": 3,
     "imgName": "img_04",
     "title": "Components",
     "year": "2018",
-    "tag": "Components, Design",
-    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    "tag": "JavaScript, Components",
+    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "projectLink": "https://weather-api-js.web.app",
+    "githubLink": "https://github.com/SochircaRoman/weather-api-js"
   }
 ]

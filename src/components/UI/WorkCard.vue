@@ -46,6 +46,8 @@ export default {
 }
 
 .work__card-img {
+  width: 246px;
+  height: 180px;
   border-radius: 6px;
 }
 
