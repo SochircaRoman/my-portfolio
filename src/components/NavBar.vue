@@ -35,18 +35,11 @@ export default {
         behavior: 'smooth'
       });
     },
-    handleBurger() {
-      const burgerItem = document.querySelector(".burger");
-      const menu = document.querySelector(".header__nav");
-      const menuCloseItem = document.querySelector(".header__nav-close");
-
-      burgerItem.addEventListener("click", () => {
-        menu.classList.add("header__nav_active");
-      })
-
-      menuCloseItem.addEventListener("click", () => {
-        menu.classList.remove("header__nav_active");
-      })
+    handleAddBurger() {
+      document.querySelector(".header__nav").classList.add("header__nav_active");
+    },
+    handleRemoveBurger() {
+      document.querySelector(".header__nav").classList.remove("header__nav_active");
     }
   },
 }
@@ -75,14 +68,14 @@ export default {
 
         </ul>
 
-        <div class="header__nav-close">
+        <div @click="handleRemoveBurger()" class="header__nav-close">
           <span class="header__nav-close-line"></span>
           <span class="header__nav-close-line"></span>
         </div>
 
       </nav>
 
-      <div @click="handleBurger()" class="header__burger burger">
+      <div @click="handleAddBurger()" class="header__burger burger">
         <span class="burger__line burger__line_first"></span>
         <span class="burger__line burger__line_second"></span>
         <span class="burger__line burger__line_third"></span>
