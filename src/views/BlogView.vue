@@ -77,4 +77,15 @@ export default {
   margin-bottom: 55px;
 }
 /* END BLOG */
+
+/* MEDIA START */
+@media screen and (max-width: 800px) {
+  .blog {
+    padding-top: 120px;
+  }
+
+  .blog__content {
+    text-align: -webkit-center;
+  }
+}
 </style>
