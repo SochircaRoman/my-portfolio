@@ -77,11 +77,16 @@ export default {
   margin-bottom: 55px;
 }
 
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+/* MEDIA START */
+@media screen and (max-width: 800px) {
+  .work {
+    padding-top: 120px;
+  }
+  
+  .work__content-title {
+    text-align: center;
+    margin: 20px 0px 25px;
   }
 }
+/* MEDIA END */
 </style>

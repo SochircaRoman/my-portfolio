@@ -130,7 +130,7 @@ export default {
 
   .work__information-links {
     margin-left: 0px;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 /* MEDIA END */
