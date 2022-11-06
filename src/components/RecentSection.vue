@@ -127,4 +127,25 @@ export default {
   margin: 0px 25px 7px;
 }
 /* END RECENT */
+
+@media screen and (max-width: 800px) {
+  .recent__header {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .recent__header-view {
+    display: none;
+  }
+
+  .recent__cards {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .recent__card {
+    max-width: 450px;
+  }
+}
 </style>
