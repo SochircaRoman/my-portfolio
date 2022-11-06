@@ -6,34 +6,7 @@ export default {
   components: {
     WorkCards,
   },
-  props: {
-    cards: {
-      id: {
-        type: Number,
-			  required: true
-      },
-      imgName: {
-        type: String,
-			  required: true
-      },
-      title: {
-        type: String,
-			  required: true
-      },
-      year: {
-        type: String,
-			  required: true
-      },
-      tag: {
-        type: String,
-			  required: true
-      },
-      text: {
-        type: String,
-			  required: true
-      },
-    }
-  },
+  props: {},
   data() {
     return {
       cards: WorkContent,
