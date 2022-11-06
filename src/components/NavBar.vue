@@ -62,6 +62,7 @@ export default {
           <li class="header__item"
             v-for="item in headerItems"
             :key="item"
+            @click="handleRemoveBurger(); handleLoad()"
           >
             <RouterLink :to="`/${item.toLowerCase()}`" class="header__link">{{ item }}</RouterLink>
           </li>
