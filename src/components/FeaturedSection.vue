@@ -7,8 +7,8 @@ export default {
   },
   props: {
     cards: {
-          type: Array,
-          required: true,
+      type: Array,
+      required: true,
     },
   },
   data() {
@@ -50,4 +50,13 @@ export default {
   margin: 15px 0px 22px;
 }
 /* END FEATURED */
+
+/* MEDIA START */
+@media screen and (max-width: 800px) {
+  .featured__title {
+    text-align: center;
+    margin: 20px 0px 25px;
+  }
+}
+/* MEDIA END */
 </style>

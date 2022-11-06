@@ -147,6 +147,7 @@ export default {
   margin-right: 10px;
 }
 
+/* MEDIA START */
 @media screen and (max-width: 800px) {
   .tech {
     text-align: center;
@@ -165,5 +166,5 @@ export default {
     display: flex;
   }
 }
-
+/* MEDIA END */
 </style>

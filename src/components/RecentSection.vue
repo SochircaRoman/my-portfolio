@@ -128,6 +128,7 @@ export default {
 }
 /* END RECENT */
 
+/* MEDIA START */
 @media screen and (max-width: 800px) {
   .recent__header {
     justify-content: center;
@@ -148,4 +149,5 @@ export default {
     max-width: 450px;
   }
 }
+/* MEDIA END */
 </style>

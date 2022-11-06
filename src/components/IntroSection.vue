@@ -6,10 +6,10 @@ export default {
     TechStack,
   },
   props: {
-      skills: {
-          type: Array,
-          required: true,
-      }
+    skills: {
+        type: Array,
+        required: true,
+    }
   },
   data() {
     return {

@@ -20,12 +20,12 @@ export default {
       <div class="work__card-information">
         <span class="work__information-date noselect">{{ card.year }}</span>
         <span class="work__information-tag noselect">{{ card.tag }}</span>
-        <span class="work__information-links noselect">
-          <a :href="card.githubLink" class="work__link" target="_blank"><img src="../../../links/GitHub.png" alt="github"></a>
-          <a :href="card.projectLink" class="work__link" target="_blank"><img src="../../../links/external-link.png" alt="project"></a>
-        </span>
       </div>
       <p class="work__card-description">{{ card.text }}</p>
+      <span class="work__information-links noselect">
+        <a :href="card.githubLink" class="work__link" target="_blank"><img src="../../../links/GitHub.png" alt="github"></a>
+        <a :href="card.projectLink" class="work__link" target="_blank"><img src="../../../links/external-link.png" alt="project"></a>
+      </span>
     </div>
   </div>
   <div class="work__card-line"></div>
@@ -81,6 +81,10 @@ export default {
 
 .work__information-links {
   margin-left: 120px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .work__link {
@@ -97,5 +101,37 @@ export default {
   max-width: 100%;
   margin: 30px 0px 70px;
 }
-  /* END WORK CARD */
+/* END WORK CARD */
+
+/* MEDIA START */
+@media screen and (max-width: 800px) {
+  .work__card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__card-title {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .work__card-information {
+    text-align: center;
+  }
+
+  .work__card-description {
+    max-width: 450px;
+    text-align: center;
+  }
+
+  .work__card-line {
+    margin: 15px 0px 50px;
+  }
+
+  .work__information-links {
+    margin-left: 0px;
+    justify-content: flex-end;
+  }
+}
+/* MEDIA END */
 </style>
