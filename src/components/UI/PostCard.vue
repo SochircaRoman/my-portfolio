@@ -14,13 +14,15 @@ export default {
 <template>
 
   <div class="post">
-    <h3 class="post__title">{{ post.title }}</h3>
-    <div class="post__info">
-      <div class="post__info-date noselect">{{ post.date }}</div>
-      <div class="post__info-line"></div>
-      <div class="post__info-tags noselect">{{ post.tag }}</div>
-    </div>
-    <div class="post__description">{{ post.text }}</div>
+    <RouterLink :to='"/post/" + post.id' class="post__link">
+      <h3 class="post__title">{{ post.title }}</h3>
+      <div class="post__info">
+        <div class="post__info-date noselect">{{ post.date }}</div>
+        <div class="post__info-line"></div>
+        <div class="post__info-tags noselect">{{ post.tag }}</div>
+      </div>
+      <div class="post__description">{{ post.text }}</div>
+    </RouterLink>
   </div>
   <div class="blog__post-line"></div>
 
@@ -32,6 +34,11 @@ export default {
   margin-bottom: 20px;
   transition: 0.2s all;
   cursor: pointer;
+}
+
+.post__link {
+  text-decoration: none;
+  color: unset;
 }
 
 .post__title {
