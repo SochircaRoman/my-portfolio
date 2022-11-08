@@ -33,10 +33,10 @@
   {
     "id": 3,
     "imgName": "img_04",
-    "title": "Components",
-    "year": "2018",
-    "tag": "JavaScript, Components",
-    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "title": "Weather API",
+    "year": "2020",
+    "tag": "JavaScript, Bootstrap",
+    "text": "Weather API is a mini project written in JS and using Bootstrap. It is a useful application for monitoring the weather in any city. On this project I worked for the first time with the API.",
     "githubLink": "https://github.com/SochircaRoman/weather-api-js",
     "projectLink": "https://weather-api-js.web.app"
   }
