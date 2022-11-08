@@ -21,7 +21,7 @@ export default {
         <div class="post__info-line"></div>
         <div class="post__info-tags noselect">{{ post.tag }}</div>
       </div>
-      <div class="post__description">{{ post.text }}</div>
+      <div class="post__description">{{ post.description }}</div>
     </RouterLink>
   </div>
   <div class="blog__post-line"></div>

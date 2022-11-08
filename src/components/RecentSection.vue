@@ -34,7 +34,7 @@ export default {
                 <div class="card__information-line"></div>
                 <div class="card__information-tags">{{ post.tag }}</div>
               </div>
-              <p class="recent__card-description">{{ post.text }}</p>
+              <p class="recent__card-description">{{ post.description }}</p>
             </RouterLink>
           </div>
 
