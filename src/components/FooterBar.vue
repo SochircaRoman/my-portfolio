@@ -21,11 +21,20 @@ export default {
           v-for="link in links"
           :key="link.id"
         >
-          <a href="#!" class="footer__item-link">
+          <div v-if="link.to">
+            <a :href="link.to" class="footer__item-link" target="_blank">
+              <div class="footer_logo noselect">
+                <img :src="`/svg/${link.name}.svg`" :alt="link.name" class="footer__logo-pic">
+              </div>
+            </a>
+          </div>
+
+          <div v-else>
             <div class="footer_logo noselect">
               <img :src="`/svg/${link.name}.svg`" :alt="link.name" class="footer__logo-pic">
             </div>
-          </a>
+          </div>
+  
         </div>
 
       </div>
@@ -39,6 +48,9 @@ export default {
 
 <style scoped>
 /* START FOOTER */
+.noactive {
+  cursor: default;
+}
 .footer {
   margin-top: 135px;
 }

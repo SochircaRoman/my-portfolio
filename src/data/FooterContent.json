@@ -1,18 +1,22 @@
 [
   {
     "id": 0,
-    "name": "facebook"
+    "name": "facebook",
+    "to": "https://www.facebook.com/roma.sochirca.1"
   },
   {
     "id": 1,
-    "name": "instagram"
+    "name": "instagram",
+    "to": ""
   },
   {
     "id": 2,
-    "name": "twiter"
+    "name": "twiter",
+    "to": ""
   },
   {
     "id": 3,
-    "name": "linkedin"
+    "name": "linkedin",
+    "to": "https://linkedin.com/in/roman-sochirca-aaba2a234"
   }
 ]
