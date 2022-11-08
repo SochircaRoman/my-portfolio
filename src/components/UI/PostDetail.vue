@@ -12,10 +12,20 @@ export default {
     id: {
       handler() {
         this.post = BlogContent[this.id]
+        this.handleLoad()
       },
       immediate: true,
     }
-  }
+  },
+  methods: {
+    handleLoad() {
+      window.scrollTo({
+        top: 0,
+        left: 0, 
+        behavior: 'smooth'
+      });
+    }
+  },
 }
 </script>
 
