@@ -36,15 +36,22 @@ export default {
             <span class="postDetail__information-date noselect">{{ post.date }}</span>
             <span class="postDetail__information-tag noselect">{{ post.tag }}</span>
           </div>
-          <div class="postDetail__post-text">
-            <div class="postDetail__post-heading">Heading Example 1</div>  
-            <p class="postDetail__post-description">{{ post.text }}</p>
+
+          <div class="postDetail__image-wrapper">
+            <img :src='"../../../blog_images/" + post.img' alt="" class="postDetail__image-img">
           </div>
 
-          <div class="postDetail__post-text">
-            <div class="postDetail__post-heading">Heading Example 2</div>  
-            <p class="postDetail__post-description">{{ post.text }}</p>
+          <div class="postDetail__image-description">{{ post.imgDesc }}</div>
+
+          <div class="postDetail__post-text">  
+            <p class="postDetail__post-description">{{ post.description }}</p>
           </div>
+
+          <div class="postDetail__post-text" v-for="item in post.text" :key="item">
+            <div class="postDetail__post-heading">{{ (Object.keys(item)).join() }}</div>  
+            <p class="postDetail__post-description">{{ (Object.values(item)).join() }}</p>
+          </div>
+
         </div>
 
       </div>
@@ -87,6 +94,22 @@ export default {
   line-height: 29px;
 }
 
+.postDetail__image-wrapper {
+  margin-bottom: 20px;
+}
+
+.postDetail__image-description {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 50px;
+
+}
+
+.postDetail__image-img {
+  max-width: 700px;
+  height: auto;
+}
+
 .postDetail__post-text {
   margin-bottom: 30px;
   max-width: 700px;
@@ -96,6 +119,7 @@ export default {
   font-weight: 500;
   font-size: 24px;
   line-height: 60px;
+  margin-bottom: -5px;
 }
 
 .postDetail__post-description {

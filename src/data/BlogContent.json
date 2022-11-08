@@ -1,10 +1,17 @@
 [
   {
     "id": 0,
-    "title": "UI Interactions of the week 1",
+    "title": "JavaScript: Switch vs If Else",
     "date": "12 Feb 2019",
-    "tag": "Express, Handlebars",
-    "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    "tag": "JavaScript, Condition",
+    "img": "img01.png",
+    "imgDesc": "Array item lookup versus using if-else or switch in Internet Explorer 7",
+    "description": "It started when I looking in a github repository switch instead if else, I noticed that instead of the usual if else the author used switch even for a few checks. This made me to think which of these two, would be more optimal for me to use in the future projects",
+    "text": [
+      {"Conditionals": "Similar in nature to loops, conditionals determine how execution flows through JavaScript. The traditional argument of whether to use if-else statements or a switch statement applies to JavaScript just as it does to other languages. Since different browsers have implemented different flow control optimizations, it is not always clear which technique to use."},
+      {"Some key advantages of switch over if-else ladder": "A switch statement works much faster than an equivalent if-else ladder. It’s because the compiler generates a jump table for a switch during compilation. As a result, during execution, instead of checking which case is satisfied, it only decides which case has to be executed. It's more readable compared to if-else statements."},
+      {"Final conclusion": "Sometimes the best approach to conditionals is to avoid using if-else and switch altogether. When there are a large number of discrete values for which to test, both if-else and switch are significantly slower than using a lookup table. Lookup tables can be created using arrays or regular objects in JavaScript, and accessing data from a lookup table is much faster than using if-else or switch, especially when the number of conditions is large"}
+    ]
   },
   {
     "id": 1,

@@ -22,7 +22,7 @@ export default {
           :key="link.id"
         >
           <a href="#!" class="footer__item-link">
-            <div class="footer_logo">
+            <div class="footer_logo noselect">
               <img :src="`/svg/${link.name}.svg`" :alt="link.name" class="footer__logo-pic">
             </div>
           </a>
