@@ -109,7 +109,6 @@ export default {
 }
 
 .postDetail__image-description {
-  text-align: center;
   font-style: italic;
   margin-bottom: 50px;
 
