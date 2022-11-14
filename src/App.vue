@@ -8,19 +8,28 @@ export default {
         RouterView,
         NavBar,
         FooterBar
+    },
+    computed: {
+    currentRouteName() {
+        return this.$route.name;
     }
+}
 }
 </script>
 
 <template>
 
-    <NavBar/>
-
+    <NavBar
+        v-if="currentRouteName != 'load'"
+    />
+    
     <div>
         <RouterView />
     </div>
 
-    <FooterBar />
+    <FooterBar
+        v-if="currentRouteName != 'load'"
+    />
 
 </template>
 

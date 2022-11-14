@@ -3,11 +3,17 @@ import HomeView from '../views/HomeView.vue'
 import WorksView from '../views/WorksView.vue'
 import BlogView from '../views/BlogView.vue'
 import ErrorPage from '../views/ErrorPage.vue'
+import LoadView from '../views/LoadView.vue'
 import PostDetail from '../components/UI/PostDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/',
+      name: 'load',
+      component: LoadView
+    },
     {
       path: '/home',
       name: 'home',

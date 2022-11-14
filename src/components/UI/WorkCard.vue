@@ -23,8 +23,8 @@ export default {
       </div>
       <p class="work__card-description">{{ card.text }}</p>
       <span class="work__information-links noselect">
-        <a :href="card.githubLink" class="work__link" target="_blank"><img src="../../../links/GitHub.png" alt="github"></a>
-        <a :href="card.projectLink" class="work__link" target="_blank"><img src="../../../links/external-link.png" alt="project"></a>
+        <a :href="card.githubLink" class="work__link" target="_blank"><img src="@/../public/links/github.png" alt="github"></a>
+        <a :href="card.projectLink" class="work__link" target="_blank"><img src="@/../public/links/external-link.png" alt="project"></a>
       </span>
     </div>
   </div>
