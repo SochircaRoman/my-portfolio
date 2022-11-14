@@ -22,7 +22,7 @@ export default {
     <NavBar
         v-if="currentRouteName != 'load'"
     />
-    
+
     <div>
         <RouterView />
     </div>
