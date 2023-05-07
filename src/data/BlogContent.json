@@ -26,5 +26,19 @@
       {"Single-Page Application (SPA)": "Some applications require rich interactivity, deep session depth, and non-trivial stateful logic on the frontend. The best way to build such applications is to use an architecture where Vue not only controls the entire page, but also handles data updates and navigation without having to reload the page. This type of application is typically referred to as a Single-Page Application (SPA). Vue provides core libraries and comprehensive tooling support with amazing developer experience for building modern SPAs, including: Client-side router, Blazing fast build tool chain, IDE support, Browser devtools, TypeScript integrations, Testing utilities."},
       {"Final conclusion": " An SPA typically downloads the initial application code (HTML, CSS and JavaScript) from the server-side, and the subsequent resources are dynamically loaded to the page, usually in response to user actions. Speaking of the advantages of SPAs, sites with single page applications are more efficient in terms of processing, they can cost less than traditional MPA sites, and they demand less time from developers because they can use repetitive layouts and act as 'content on demand' apps."}
     ]
+  },
+  {
+    "id": 2,
+    "title": "RESTfull API Aplicattion",
+    "date": "01 May 2023",
+    "tag": "REST, API, App",
+    "img": "img03.png",
+    "imgDesc": "RESTfull API arhitecture",
+    "description": "RESTful API architecture is a design pattern for creating web-based APIs that follows a set of principles and guidelines to ensure that the APIs are easy to understand, maintain, and scale. REST stands for Representational State Transfer, which is a style of software architecture that uses HTTP protocol to communicate between client and server.",
+    "text": [
+      {"Introduction in REST API": "Overall, the RESTful API architecture is a flexible and scalable way to create web-based APIs that are easy to understand, maintain, and scale. By following the principles and guidelines of RESTful API architecture, developers can create APIs that are interoperable, flexible, and extensible, which is essential in today's rapidly evolving technological landscape."},
+      {"Advantages": "One of the main advantages of RESTful APIs is that they are language-agnostic and can be used with any programming language that supports HTTP. This means that developers can create APIs in their preferred programming language and easily integrate them with other systems."},
+      {"Conclusion": "In conclusion, RESTful API architecture is a widely used design pattern for creating web-based APIs that are scalable, interoperable, and flexible. By following the principles of RESTful architecture, developers can create APIs that are easy to understand, maintain, and integrate with other systems."}
+    ]
   }
 ]

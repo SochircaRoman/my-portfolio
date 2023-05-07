@@ -111,6 +111,7 @@ export default {
 .postDetail__image-description {
   font-style: italic;
   margin-bottom: 50px;
+  text-align: center;
 
 }
 

@@ -2,6 +2,17 @@
   {
     "id": 0,
     "imgName": "img_01",
+    "title": "Logo Generator",
+    "year": "2023",
+    "tag": "Vue.js, Express",
+    "text": "(Work in progress) This is a web logo generator app written for USARB university as a bachelor’s thesis that uses neural networks and specifically GANs networks. This is a client-server app that use RESTfull API arhitecture.",
+    "githubLink": "https://github.com/SochircaRoman/logo_generator-web-app",
+    "projectLink": "https://logogenerator-730da.web.app"
+    
+  },
+  {
+    "id": 1,
+    "imgName": "img_02",
     "title": "Caesar Cipher",
     "year": "2021",
     "tag": "JavaScript, Bootstrap",
@@ -11,8 +22,8 @@
     
   },
   {
-    "id": 1,
-    "imgName": "img_02",
+    "id": 2,
+    "imgName": "img_03",
     "title": "Virtual Keyboard",
     "year": "2020",
     "tag": "JavaScript, CSS",
@@ -21,8 +32,8 @@
     "projectLink": "https://js-keyboard-80f0b.web.app"
   },
   {
-    "id": 2,
-    "imgName": "img_03",
+    "id": 3,
+    "imgName": "img_04",
     "title": "Game Clicker",
     "year": "2020",
     "tag": "JavaScript, CSS",
@@ -31,8 +42,8 @@
     "projectLink": "https://clicker-game-js.web.app"
   },
   {
-    "id": 3,
-    "imgName": "img_04",
+    "id": 4,
+    "imgName": "img_05",
     "title": "Weather API",
     "year": "2020",
     "tag": "JavaScript, Bootstrap",
